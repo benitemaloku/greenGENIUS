@@ -1,0 +1,154 @@
+﻿@model List<Bulky.Models.medicalPlants>
+
+@{
+    ViewData["Title"] = "Search Page";
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Filter</title>
+    <style>
+        body {
+            background-color: #E6E6FA;
+        }
+
+        .the-card {
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 10px;
+        }
+
+            .the-card :hover {
+                transition: background-color 0.3s ease;
+                transform: scale(1.005);
+            }
+
+
+        .filter {
+            padding: 10px;
+        }
+
+
+        /*rgb(123,182,100)*/
+
+
+        .plant-container {
+            border: 1px solid #90EE90;
+            background-color: #90EE90;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+            .plant-container img {
+                width: 110%;
+                height: 200px;
+                max-height: 200px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+
+        .filteri {
+            margin-inline: 5px
+        }
+
+        .navbar-search ul {
+            list-style-type: none;
+            background-color: #90EE90;
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+            border-radius: 50px;
+        }
+
+        .navbar-search a {
+            color: #2E8B57;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+            text-align: center;
+        }
+
+        .navbar-search li {
+            float: left;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar-search">
+
+        <ul>
+            <li><a asp-area="Customer" asp-controller="AestheticPlants" asp-action="Index"> Decorative Plants </a></li>
+            <li><a style="background-color:#3CB371"> Medicinal Plants </a></li>
+            <li><a asp-area="Customer" asp-controller="EdiblePlants" asp-action="Index"> Culinary Plants </a></li>
+        </ul>
+
+    </nav>
+    <br />
+
+
+    <form id="filter" asp-controller="AestheticPlants" asp-action="Index" method="get" class="form-inline mb-4" onsubmit="return validateSearchForm()">
+        <div class="filteri">
+            <label for="searchName" class="sr-only">Name</label>
+            <input type="text" id="searchName" name="searchName" class="form-control" placeholder="Name" />
+        </div>
+        <div class="filteri">
+            <label for="searchSeason" class="sr-only">Season</label>
+            <input type="text" id="searchSeason" name="searchSeason" class="form-control" placeholder="Season" />
+        </div>
+        <div class="filteri">
+            <label for="searchCondition" class="sr-only">Condition</label>
+            <input type="text" id="searchCondition" name="searchCondition" class="form-control" placeholder="Condition" />
+        </div>
+        <div class="filteri">
+            <label for="searchEnvironment" class="sr-only">Environment</label>
+            <input type="text" id="searchEnvironment" name="searchEnvironment" class="form-control" placeholder="Environment" />
+        </div>
+        <br />
+        <button style="background-color:#3CB371; border-color:#3CB371" type="submit" class="btn btn-primary">Filter</button>
+    </form>
+
+
+
+    <div id="hello" class="the-card">
+
+        @foreach (var plant in Model)
+        {
+            <a asp-controller="MedicalPlants" asp-action="Details" asp-route-id="@plant.Id" style="text-align: center">
+                <button style="border-radius:20px; border:none; background-color:#3CB371;">
+
+                    <div class="plant-container">
+
+
+                        <div class="plant-image" style="margin-bottom: 0px;">
+
+                            <img src="data:image/jpeg;base64,@Convert.ToBase64String(plant.Photo)" alt="Plant Image" />
+                        </div>
+
+                        <strong>
+                            <h3 style="color:#2E8B57;">@plant.Name</h3>
+                        </strong>
+
+
+
+
+                    </div>
+                </button>
+            </a>
+        }
+    </div>
+    <br />
+
+    <p> Change the filtering criteria to get more results</p>
+</body>
+</html>

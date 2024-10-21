@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - greenGENIUS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #333333;
+        }
+
+        h2, h3 {
+            font-family: 'Lora', serif;
+            color: #43A047;
+        }
+
+        .about-section .team-member h5 {
+            font-family: 'Lora', serif;
+            color: #43A047;
+        }
+
+        .about-section .team-member p {
+            color: #666666;
+        }
+
+        .about-section .values-section i {
+            color: #43A047;
+        }
+
+        .about-section .values-section h5 {
+            font-family: 'Lora', serif;
+            color: #43A047;
+        }
+
+        .about-section .values-section p {
+            color: #666666;
+        }
+
+        .social-icons a {
+            color: #0077B5; /* LinkedIn Color */
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+            .social-icons a:hover {
+                color: #43A047; /* Hover Color */
+            }
+
+        .social-icons .fab.fa-github {
+            color: #333; /* GitHub Color */
+        }
+
+        .social-icons .fab.fa-facebook {
+            color: #4267B2; /* Facebook Color */
+        }
+    </style>
+</head>
+<body>
+    <section class="about-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">About greenGENIUS</h2>
+            <div class="row mb-5">
+                <div class="col-md-6">
+                    <img src="/images/ekipa.jpg" class="img-fluid rounded" alt="About Us">
+                </div>
+                <div class="col-md-6">
+                    <h3>Our Mission</h3>
+                    <p>At greenGENIUS, we strive to provide the best gardening services and plant information to help you create and maintain a beautiful and healthy garden. Our mission is to educate and support garden enthusiasts with expert advice and high-quality services.</p>
+                    <h3>Our Vision</h3>
+                    <p>We envision a world where everyone has access to the knowledge and resources needed to cultivate their own green spaces, promoting a healthier environment and a more sustainable future.</p>
+                </div>
+            </div>
+            <div class="team-section mb-5">
+                <h3 class="text-center mb-4">Meet Our Team</h3>
+                <div class="row">
+                    <div class="col-md-3 text-center team-member" data-toggle="modal" data-target="#teamMember1Modal">
+                        <img src="/images/aalba.jpg" class="img-fluid rounded-circle mb-3" alt="Team Member 1">
+                        <h5>Alba Gashi</h5>
+                        <p>Founder & CEO</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/alba-g-4a5251255/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/alba.gashi.961556" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="https://github.com/AlbaGashi" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center team-member" data-toggle="modal" data-target="#teamMember2Modal">
+                        <img src="/images/aarmend.jpg" class="img-fluid rounded-circle mb-3" alt="Team Member 2">
+                        <h5>Armend Bytyci</h5>
+                        <p>Chief Gardener</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/armend-byty%C3%A7i-4174082b4/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/armendb" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="https://github.com/armend24" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center team-member" data-toggle="modal" data-target="#teamMember3Modal">
+                        <img src="/images/Benita.jpg" class="img-fluid rounded-circle mb-3" alt="Team Member 3">
+                        <h5>Benite Maloku</h5>
+                        <p>Plant Specialist</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/maryjohnson" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/benitem" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="https://github.com/benitamaloku" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center team-member" data-toggle="modal" data-target="#teamMember4Modal">
+                        <img src="/images/uuran.jpg" class="img-fluid rounded-circle mb-3" alt="Team Member 4">
+                        <h5>Uran Hoxha</h5>
+                        <p>Landscape Designer</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/uran-hoxha-405721256/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/uranh" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="https://github.com/uranhoxha" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="values-section mb-5">
+                <h3 class="text-center mb-4">Our Values</h3>
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <i class="fas fa-leaf fa-3x mb-3" style="color: #43A047;"></i>
+                        <h5>Environmental Sustainability</h5>
+                        <p>We are committed to promoting sustainable gardening practices that protect and enhance the environment.</p>
+                        <img src="/images/mjedisi.jpg" class="img-fluid rounded mt-3" alt="Sustainability">
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <i class="fas fa-hands-helping fa-3x mb-3" style="color: #FF6347;"></i>
+                        <h5>Community Support</h5>
+                        <p>We believe in supporting our local communities by providing valuable resources and services.</p>
+                        <img src="/images/community.jpg" class="img-fluid rounded mt-3" alt="Community Support">
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <i class="fas fa-seedling fa-3x mb-3" style="color: #FFD700;"></i>
+                        <h5>Innovation</h5>
+                        <p>We are dedicated to continuous innovation in gardening techniques and plant care to offer the best solutions for our clients.</p>
+                        <img src="/images/inno.jpg" class="img-fluid rounded mt-3" alt="Innovation">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js"></script>
+</body>
+</html>
+
+
+<style>
+    .values-section {
+        background-color: #f7f7f7;
+        padding: 50px 0;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .values-section:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .values-section .value-icon {
+            position: relative;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+            .values-section .value-icon:hover {
+                transform: scale(1.1);
+            }
+
+        .values-section h5 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .values-section p {
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+    .about-section {
+        background-color: #f7f7f7;
+        padding: 50px 0;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+        .about-section h2, .about-section h3 {
+            color: #43A047;
+        }
+
+    .team-section .team-member {
+        margin-bottom: 30px;
+    }
+
+        .team-section .team-member img {
+            border: 3px solid #43A047;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .team-section .team-member:hover img {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .team-section .team-member h5 {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+    .team-section .social-icons {
+        margin-top: 10px;
+    }
+
+        .team-section .social-icons a {
+            color: #43A047;
+            font-size: 1.5rem;
+            margin: 0 5px;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+            .team-section .social-icons a:hover {
+                color: #379E3E;
+                transform: scale(1.1);
+            }
+
+    .values-section {
+        background-color: #ffffff;
+        padding: 50px 0;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .values-section:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .values-section .value-icon {
+            position: relative;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+            .values-section .value-icon:hover {
+                transform: scale(1.1);
+            }
+
+        .values-section h5 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .values-section p {
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+</style>

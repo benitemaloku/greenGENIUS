@@ -1,0 +1,60 @@
+C:\Users\Admin\source\repos\Bulky\Bulky.Utility\bin\Debug\net8.0\Bulky.Utility.deps.json
+C:\Users\Admin\source\repos\Bulky\Bulky.Utility\bin\Debug\net8.0\Bulky.Utility.dll
+C:\Users\Admin\source\repos\Bulky\Bulky.Utility\bin\Debug\net8.0\Bulky.Utility.pdb
+C:\Users\Admin\source\repos\Bulky\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\Bulky\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\Bulky\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.AssemblyInfo.cs
+C:\Users\Admin\source\repos\Bulky\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Bulky\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.sourcelink.json
+C:\Users\Admin\source\repos\Bulky\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.dll
+C:\Users\Admin\source\repos\Bulky\Bulky.Utility\obj\Debug\net8.0\refint\Bulky.Utility.dll
+C:\Users\Admin\source\repos\Bulky\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.pdb
+C:\Users\Admin\source\repos\Bulky\Bulky.Utility\obj\Debug\net8.0\ref\Bulky.Utility.dll
+C:\Users\Admin\Desktop\Bulky\Bulky.Utility\bin\Debug\net8.0\Bulky.Utility.deps.json
+C:\Users\Admin\Desktop\Bulky\Bulky.Utility\bin\Debug\net8.0\Bulky.Utility.dll
+C:\Users\Admin\Desktop\Bulky\Bulky.Utility\bin\Debug\net8.0\Bulky.Utility.pdb
+C:\Users\Admin\Desktop\Bulky\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\Bulky\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\Bulky\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.AssemblyInfo.cs
+C:\Users\Admin\Desktop\Bulky\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Bulky\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.dll
+C:\Users\Admin\Desktop\Bulky\Bulky.Utility\obj\Debug\net8.0\refint\Bulky.Utility.dll
+C:\Users\Admin\Desktop\Bulky\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.pdb
+C:\Users\Admin\Desktop\Bulky\Bulky.Utility\obj\Debug\net8.0\ref\Bulky.Utility.dll
+C:\Users\Admin\source\repos\Bulky\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.csproj.AssemblyReference.cache
+C:\Users\admin\OneDrive\Desktop\Bulky-main\Bulky.Utility\bin\Debug\net8.0\Bulky.Utility.deps.json
+C:\Users\admin\OneDrive\Desktop\Bulky-main\Bulky.Utility\bin\Debug\net8.0\Bulky.Utility.dll
+C:\Users\admin\OneDrive\Desktop\Bulky-main\Bulky.Utility\bin\Debug\net8.0\Bulky.Utility.pdb
+C:\Users\admin\OneDrive\Desktop\Bulky-main\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.csproj.AssemblyReference.cache
+C:\Users\admin\OneDrive\Desktop\Bulky-main\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\OneDrive\Desktop\Bulky-main\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.AssemblyInfoInputs.cache
+C:\Users\admin\OneDrive\Desktop\Bulky-main\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.AssemblyInfo.cs
+C:\Users\admin\OneDrive\Desktop\Bulky-main\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.csproj.CoreCompileInputs.cache
+C:\Users\admin\OneDrive\Desktop\Bulky-main\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.dll
+C:\Users\admin\OneDrive\Desktop\Bulky-main\Bulky.Utility\obj\Debug\net8.0\refint\Bulky.Utility.dll
+C:\Users\admin\OneDrive\Desktop\Bulky-main\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.pdb
+C:\Users\admin\OneDrive\Desktop\Bulky-main\Bulky.Utility\obj\Debug\net8.0\ref\Bulky.Utility.dll
+C:\Users\admin\OneDrive\Desktop\greenGENIUS\Bulky.Utility\bin\Debug\net8.0\Bulky.Utility.deps.json
+C:\Users\admin\OneDrive\Desktop\greenGENIUS\Bulky.Utility\bin\Debug\net8.0\Bulky.Utility.dll
+C:\Users\admin\OneDrive\Desktop\greenGENIUS\Bulky.Utility\bin\Debug\net8.0\Bulky.Utility.pdb
+C:\Users\admin\OneDrive\Desktop\greenGENIUS\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.csproj.AssemblyReference.cache
+C:\Users\admin\OneDrive\Desktop\greenGENIUS\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\OneDrive\Desktop\greenGENIUS\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.AssemblyInfoInputs.cache
+C:\Users\admin\OneDrive\Desktop\greenGENIUS\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.AssemblyInfo.cs
+C:\Users\admin\OneDrive\Desktop\greenGENIUS\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.csproj.CoreCompileInputs.cache
+C:\Users\admin\OneDrive\Desktop\greenGENIUS\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.dll
+C:\Users\admin\OneDrive\Desktop\greenGENIUS\Bulky.Utility\obj\Debug\net8.0\refint\Bulky.Utility.dll
+C:\Users\admin\OneDrive\Desktop\greenGENIUS\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.pdb
+C:\Users\admin\OneDrive\Desktop\greenGENIUS\Bulky.Utility\obj\Debug\net8.0\ref\Bulky.Utility.dll
+C:\Users\ADMIN\Desktop\B M\greenGENIUS\Bulky.Utility\bin\Debug\net8.0\Bulky.Utility.deps.json
+C:\Users\ADMIN\Desktop\B M\greenGENIUS\Bulky.Utility\bin\Debug\net8.0\Bulky.Utility.dll
+C:\Users\ADMIN\Desktop\B M\greenGENIUS\Bulky.Utility\bin\Debug\net8.0\Bulky.Utility.pdb
+C:\Users\ADMIN\Desktop\B M\greenGENIUS\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Desktop\B M\greenGENIUS\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\Desktop\B M\greenGENIUS\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Desktop\B M\greenGENIUS\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.AssemblyInfo.cs
+C:\Users\ADMIN\Desktop\B M\greenGENIUS\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\B M\greenGENIUS\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.dll
+C:\Users\ADMIN\Desktop\B M\greenGENIUS\Bulky.Utility\obj\Debug\net8.0\refint\Bulky.Utility.dll
+C:\Users\ADMIN\Desktop\B M\greenGENIUS\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.pdb
+C:\Users\ADMIN\Desktop\B M\greenGENIUS\Bulky.Utility\obj\Debug\net8.0\ref\Bulky.Utility.dll

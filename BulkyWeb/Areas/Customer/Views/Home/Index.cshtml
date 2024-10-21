@@ -1,0 +1,2213 @@
+﻿@model IEnumerable<Product>
+
+
+@{
+    ViewData["Title"] = "Home";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>greenGENIUS - Professional Lawn Care</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            transition: background 1s ease-in-out;
+            background-color: #f9f9f9; /* Deep dark green background */
+            color: #000000; /* Black text color for better readability */
+        }
+
+
+
+        /* Jumbotron styles */
+        .jumbotron {
+            background: url('/images/bena19.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20px;
+            margin-bottom: 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+            .jumbotron::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                z-index: 1;
+            }
+
+        .jumbotron-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .jumbotron h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            animation: wave 1.5s infinite;
+            color: #FFD700;
+            text-transform: uppercase;
+        }
+
+        .jumbotron p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            animation: slideInUp 1.5s ease-in-out;
+            color: #FFFFFF;
+        }
+
+        .btn-see-work,
+        .btn-register {
+            background-color: #FFD700;
+            border: none;
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            margin: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+            .btn-see-work::before,
+            .btn-register::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 300%;
+                height: 100%;
+                background: rgba(255, 255, 255, 0.2);
+                transition: all 0.5s ease;
+                transform: skewX(-30deg);
+                z-index: 0;
+            }
+
+            .btn-see-work:hover::before,
+            .btn-register:hover::before {
+                left: 100%;
+            }
+
+            .btn-see-work:hover,
+            .btn-register:hover {
+                background-color: #FFA500;
+                transform: translateY(-3px);
+            }
+
+            .btn-see-work:active,
+            .btn-register:active {
+                transform: translateY(-1px);
+                box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            }
+
+        /* Additional Decorative Elements */
+        .jumbotron-decor {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            animation: bounceIn 2s infinite;
+        }
+
+            .jumbotron-decor img {
+                width: 100px;
+                height: auto;
+            }
+
+        .jumbotron-content::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 60%);
+            transform: translate(-50%, -50%) scale(0);
+            opacity: 0;
+            transition: all 0.5s ease-in-out;
+            z-index: 0;
+        }
+
+        .jumbotron-content:hover::after {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 1;
+        }
+
+        /* Magic sparkles effect */
+        .sparkle {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: radial-gradient(circle, #FFD700, transparent);
+            border-radius: 50%;
+            animation: sparkleAnim 2s infinite;
+        }
+
+        sparkleAnim {
+            0%
+
+        {
+            transform: scale(0) translateY(-50%);
+            opacity: 0;
+        }
+
+        50% {
+            transform: scale(1.5) translateY(-50%);
+            opacity: 1;
+        }
+
+        100% {
+            transform: scale(0) translateY(-50%);
+            opacity: 0;
+        }
+
+        }
+
+        /* Keyframes for animations */
+        fadeIn {
+            from
+
+        {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+
+        }
+
+        slideInDown {
+            from
+
+        {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        }
+
+        slideInUp {
+            from
+
+        {
+            transform: translateY(100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        }
+
+        bounceIn {
+            0%, 20%, 50%, 80%, 100%
+
+        {
+            transform: translateY(0);
+        }
+
+        40% {
+            transform: translateY(-30px);
+        }
+
+        60% {
+            transform: translateY(-15px);
+        }
+
+        }
+
+        keyframes colorShift {
+            0%
+
+        {
+            filter: brightness(1);
+        }
+
+        100% {
+            filter: brightness(1.3);
+        }
+
+        }
+
+        keyframes wave {
+            0%
+
+        {
+            transform: rotate(0deg);
+        }
+
+        50% {
+            transform: rotate(3deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+
+        }
+
+        /* Twinkle effect */
+        .twinkle {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            animation: twinkleAnim 1.5s infinite ease-in-out;
+        }
+
+        keyframes twinkleAnim {
+            0%
+
+        {
+            opacity: 0;
+            transform: scale(0);
+        }
+
+        50% {
+            opacity: 1;
+            transform: scale(1.5);
+        }
+
+        100% {
+            opacity: 0;
+            transform: scale(0);
+        }
+
+        }
+        /* Seasonal Planting */
+        .seasonal-planting-section {
+            background: linear-gradient(to bottom right, #43cea2, #185a9d); /* Ngjyra të gjalla */
+            padding: 60px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: #ffffff;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: fadeInDown 1s ease-in-out;
+            position: relative;
+            z-index: 2;
+        }
+
+        .season-card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: fadeInUp 1s ease-in-out;
+            position: relative;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+
+            .season-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            }
+
+            .season-card h3 {
+                font-size: 1.8rem;
+                color: #185a9d; /* Ngjyra më të gjalla për tekstin */
+                margin-bottom: 20px;
+            }
+
+            .season-card ul {
+                list-style: none;
+                padding: 0;
+            }
+
+                .season-card ul li {
+                    font-size: 1rem;
+                    color: #185a9d; /* Ngjyra më të gjalla për tekstin */
+                    margin-bottom: 10px;
+                }
+
+        /* Efekte Animuese për Ngjyrat */
+        .spring {
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            animation: colorShift 6s infinite alternate;
+        }
+
+        .summer {
+            background: linear-gradient(135deg, #ffeb3b, #ffc107);
+            animation: colorShift 6s infinite alternate;
+        }
+
+        .fall {
+            background: linear-gradient(135deg, #ffcc80, #ffb74d);
+            animation: colorShift 6s infinite alternate;
+        }
+
+        .winter {
+            background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+            animation: colorShift 6s infinite alternate;
+        }
+
+        /* Efekt Animuese */
+        colorShift {
+            0%
+
+        {
+            filter: brightness(1);
+        }
+
+        100% {
+            filter: brightness(1.3);
+        }
+
+        }
+
+        fadeInDown {
+            from
+
+        {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        }
+
+        fadeInUp {
+            from
+
+        {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        }
+
+        /* Efekt i Shkëlqimit për Kartat */
+        .season-card:before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 60%);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .season-card:hover:before {
+            opacity: 1;
+        }
+
+        /* Efektet e dritës për gjithë seksionin */
+        .seasonal-planting-section::before {
+            content: '';
+            position: absolute;
+            top: -20%;
+            left: -20%;
+            width: 140%;
+            height: 140%;
+            background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 60%);
+            animation: rotateLight 20s infinite linear;
+            opacity: 0.5;
+        }
+
+        rotateLight {
+            from
+
+        {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+
+        }
+
+
+        /* Plant Care Calendar Section */
+        .plant-care-calendar-section {
+            background-color: #f0f0f0;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        .calendar {
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: #fff;
+        }
+
+        .month ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            background: #43A047;
+            color: white;
+        }
+
+            .month ul li {
+                display: inline-block;
+                padding: 10px 20px;
+            }
+
+        .month .prev,
+        .month .next {
+            cursor: pointer;
+        }
+
+        .weekdays {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background: #ddd;
+        }
+
+            .weekdays li {
+                display: inline-block;
+                width: 13.6%;
+                padding: 10px 0;
+                text-align: center;
+                background-color: #ddd;
+            }
+
+        .days {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+            .days li {
+                display: inline-block;
+                width: 13.6%;
+                padding: 10px 0;
+                text-align: center;
+                background-color: #eee;
+                margin-bottom: 5px;
+                cursor: pointer;
+                transition: background 0.3s;
+            }
+
+                .days li:hover {
+                    background-color: #d4edda;
+                }
+
+        .task {
+            font-size: 0.8rem;
+            color: #555;
+            margin-top: 5px;
+        }
+
+        .care-details {
+            margin-top: 20px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: none;
+        }
+
+            .care-details h4 {
+                font-size: 1.8rem;
+                color: #43A047;
+                margin-bottom: 10px;
+            }
+
+            .care-details p {
+                font-size: 1.2rem;
+                color: #666;
+            }
+
+        fadeInDown {
+            from
+
+        {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        }
+
+        /*service */
+        .services-section {
+            background-color: #f9f9f9;
+            padding: 60px 0;
+        }
+
+            .services-section h2 {
+                color: #43A047;
+                font-size: 2.5rem;
+                margin-bottom: 40px;
+            }
+
+        .service-card {
+            background-color: #fff;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+            .service-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            }
+
+        .icon-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            background-color: #e8f5e9;
+            border-radius: 50%;
+            margin: 0 auto;
+            transition: background-color 0.3s;
+        }
+
+        .service-card:hover .icon-container {
+            background-color: #a5d6a7;
+        }
+
+        .service-title {
+            font-size: 1.5rem;
+            color: #333;
+            margin: 20px 0 10px 0;
+        }
+
+        .service-description {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+
+
+
+
+
+
+
+        /* Seasonal Planting Section */
+        .seasonal-planting-section {
+            background: #ffffff; /* Sfond i bardhë për seksionin */
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: #222629;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        .season-card {
+            background: #fff; /* Ngjyra e bardhë për kutitë */
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: fadeInUp 1s ease-in-out;
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+            .season-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            }
+
+            .season-card h3 {
+                font-size: 1.8rem;
+                color: #222629;
+                margin-bottom: 20px;
+            }
+
+            .season-card ul {
+                list-style: none;
+                padding: 0;
+            }
+
+                .season-card ul li {
+                    font-size: 1rem;
+                    color: #666;
+                    margin-bottom: 10px;
+                }
+
+        /* Ngjyrat e gradientit për stinët */
+        .spring {
+            background: linear-gradient(135deg, #e3f2fd, #CB2D6F);
+        }
+
+        .summer {
+            background: linear-gradient(135deg, #FCE181, #FCE181);
+        }
+
+        .fall {
+            background: linear-gradient(135deg, #9B786F, #D4A59A);
+        }
+
+        .winter {
+            background: linear-gradient(135deg, #e0f7fa, #474B4F);
+        }
+
+        /* Efekte Animuese */
+        fadeInDown {
+            from
+
+        {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        }
+
+        fadeInUp {
+            from opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+
+        /* Garden Visual Section */
+        #gardenVisual {
+            background-color: #2E4C2C; /* Deep dark green background */
+            color: #FFFFFF; /* White text color */
+            padding: 50px 0;
+        }
+
+            #gardenVisual h2 {
+                font-size: 2.5rem;
+                color: #FFFFFF; /* White color */
+                margin-bottom: 30px;
+            }
+
+            #gardenVisual img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 15px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            }
+
+                #gardenVisual img:hover {
+                    transform: scale(1.05);
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                }
+
+
+
+        /* Our Work Section */
+        .work-section {
+            background-color: #f9f9f9;
+            padding: 50px 0;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+
+
+        /*Plant Health*/
+        .plant-health-section {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+
+        .section-title {
+            color: #43A047;
+            font-weight: bold;
+        }
+
+        .form-label {
+            font-weight: bold;
+            color: #43A047;
+        }
+
+        .diagnostic-form .form-control {
+            border: 1px solid #43A047;
+            border-radius: 5px;
+        }
+
+        .diagnostic-result {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+            .diagnostic-result h5 {
+                color: #43A047;
+                font-weight: bold;
+            }
+
+            .diagnostic-result p {
+                margin: 10px 0;
+            }
+
+
+        /*Recommendation*/
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+            .card:hover {
+                transform: scale(1.05);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .card:hover .card-img-top {
+            transform: scale(1.1);
+        }
+
+        .btn-primary {
+            background-color: #6B8E23;
+            border-color: #6B8E23;
+            color: white;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+            .btn-primary:hover {
+                background-color: #556B2F;
+                border-color: #556B2F;
+                transform: scale(1.05);
+            }
+
+
+
+
+        /* What our Clients say */
+        <style >
+        .testimonials-section {
+            background-color: #f9f9f9;
+            padding: 50px 0;
+        }
+
+        .testimonial img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            object-fit: cover;
+            border: 4px solid #43A047;
+        }
+
+        .testimonial p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #666;
+            font-style: italic;
+        }
+
+        .testimonial h5 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .social-icons a {
+            color: #0077B5; /* LinkedIn Color */
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+            .social-icons a:hover {
+                color: #43A047; /* Hover Color */
+            }
+
+        .social-icons .fab.fa-facebook {
+            color: #4267B2; /* Facebook Color */
+        }
+
+        .social-icons .fab.fa-linkedin {
+            color: #0077B5; /* LinkedIn Color */
+        }
+
+
+        /* Feature Articles Section */
+        #feature-articles .card {
+            border: none;
+            transition: transform 0.3s;
+        }
+
+            #feature-articles .card:hover {
+                transform: scale(1.05);
+            }
+
+        #feature-articles .card-img-top {
+            border-radius: 0.5rem 0.5rem 0 0;
+        }
+
+        #feature-articles .card-body {
+            padding: 1.5rem;
+        }
+
+        #feature-articles .card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #43A047;
+        }
+
+        #feature-articles .card-text {
+            color: #555;
+        }
+
+        #feature-articles .btn-primary {
+            background-color: #43A047;
+            border-color: #43A047;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+            #feature-articles .btn-primary:hover {
+                background-color: #388E3C;
+                transform: scale(1.1);
+            }
+
+        /* Modal Styling */
+        .modal-content {
+            border-radius: 1rem;
+            border: none;
+        }
+
+        .modal-header {
+            border-bottom: none;
+        }
+
+        .modal-title {
+            color: #43A047;
+        }
+
+        .modal-body {
+            color: #555;
+        }
+
+
+
+
+        /*Subscription box*/
+        .subscription-box-section {
+            background-color: #f9f9f9;
+            padding: 60px 0;
+        }
+
+            .subscription-box-section h2 {
+                color: #43A047;
+                font-size: 2.5rem;
+                margin-bottom: 40px;
+            }
+
+            .subscription-box-section .img-fluid {
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .subscription-box-section h3 {
+                color: #333;
+                font-size: 1.8rem;
+                margin-top: 20px;
+            }
+
+            .subscription-box-section ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+                .subscription-box-section ul li {
+                    background: url('/images/checkmark.png') no-repeat left center;
+                    background-size: 20px;
+                    padding-left: 30px;
+                    margin-bottom: 10px;
+                    color: #666;
+                    font-size: 1.1rem;
+                }
+
+        #subscription-form .form-group label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        #subscription-form .form-control {
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-bottom: 15px;
+        }
+
+        #subscription-form .btn-primary {
+            background-color: #43A047;
+            border-color: #43A047;
+        }
+
+            #subscription-form .btn-primary:hover {
+                background-color: #379E3E;
+                border-color: #379E3E;
+            }
+
+        #subscription-success {
+            font-size: 1.2rem;
+        }
+
+
+        .footer-section .social-icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+            .footer-section .social-icons a {
+                color: #43A047;
+                font-size: 2.5rem;
+                margin: 0 15px;
+                transition: transform 0.3s ease, color 0.3s ease;
+            }
+
+                .footer-section .social-icons a:hover {
+                    transform: scale(1.2);
+                    color: #3e8e41; /* Slightly darker green for hover effect */
+                }
+
+        .footer-section .btn-animated {
+            display: inline-block;
+            padding: 10px 30px;
+            color: white;
+            background-color: #43A047;
+            border: 2px solid transparent;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+            .footer-section .btn-animated:hover {
+                color: #43A047;
+                background-color: white;
+                border-color: #43A047;
+            }
+
+            .footer-section .btn-animated::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 300%;
+                height: 300%;
+                background-color: #43A047;
+                transition: all 0.3s ease-in-out;
+                z-index: 0;
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+
+            .footer-section .btn-animated:hover::before {
+                width: 0;
+                height: 0;
+            }
+
+
+        /* Sponsors Section */
+        #sponsors {
+            background-color: #f8f9fa; /* Light grey background */
+            padding: 50px 0;
+        }
+
+            #sponsors h2 {
+                font-size: 2rem;
+                color: #333;
+                margin-bottom: 30px;
+            }
+
+            #sponsors .img-fluid {
+                max-width: 100%;
+                height: auto;
+                filter: grayscale(100%);
+                transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+            }
+
+                #sponsors .img-fluid:hover {
+                    filter: none;
+                    transform: scale(1.05);
+                }
+
+
+
+        /*Review*/
+        .review-section {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #f9f9f9;
+            border-top: 3px solid #43A047;
+            border-bottom: 3px solid #43A047;
+        }
+
+            .review-section h2 {
+                color: #43A047;
+            }
+
+            .review-section p {
+                color: #666;
+            }
+
+        .emoji-btn {
+            font-size: 40px;
+            cursor: pointer;
+            transition: transform 0.3s, color 0.3s;
+            margin: 10px;
+        }
+
+            .emoji-btn:hover {
+                transform: scale(1.2);
+                color: #43A047;
+            }
+
+        .emoji-feedback {
+            font-size: 20px;
+            color: #43A047;
+        }
+
+
+
+
+        /* Footer Section */
+        .footer-section {
+            background-color: #343a40;
+            color: white;
+            padding: 50px 0;
+        }
+
+            .footer-section h5 {
+                font-size: 1.5rem;
+                color: #A9DFBF;
+                margin-bottom: 20px;
+            }
+
+            .footer-section ul {
+                list-style: none;
+                padding: 0;
+            }
+
+                .footer-section ul li {
+                    font-size: 1rem;
+                    margin-bottom: 10px;
+                }
+
+                    .footer-section ul li i {
+                        color: #A9DFBF;
+                        margin-right: 10px;
+                    }
+
+            .footer-section .social-icons {
+                font-size: 2rem;
+            }
+
+                .footer-section .social-icons a {
+                    color: white;
+                    margin-right: 15px;
+                    transition: transform 0.3s ease-in-out;
+                }
+
+                    .footer-section .social-icons a:hover {
+                        color: #A9DFBF;
+                        transform: scale(1.2);
+                    }
+
+            .footer-section p {
+                font-size: 1rem;
+                color: #bbb;
+            }
+
+                .footer-section p a {
+                    color: #A9DFBF;
+                    text-decoration: none;
+                }
+
+                    .footer-section p a:hover {
+                        color: #45A049;
+                    }
+
+            .footer-section .btn-animated {
+                display: inline-block;
+                padding: 10px 30px;
+                color: white;
+                background-color: #45A049;
+                border: 2px solid transparent;
+                overflow: hidden;
+                transition: all 0.3s ease-in-out;
+                border-radius: 25px;
+                text-decoration: none;
+                font-size: 1rem;
+            }
+
+                .footer-section .btn-animated:hover {
+                    color: #45A049;
+                    background-color: white;
+                    border-color: #45A049;
+                }
+
+                .footer-section .btn-animated::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 300%;
+                    height: 300%;
+                    background-color: #45A049;
+                    transition: all 0.3s ease-in-out;
+                    z-index: 0;
+                    transform: translate(-50%, -50%) rotate(45deg);
+                }
+
+                .footer-section .btn-animated:hover::before {
+                    width: 0;
+                    height: 0;
+                }
+    </style>
+</head>
+
+<body>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container jumbotron-content text-center">
+            <h1 class="display-4">Discover the Magic of Green Genius</h1>
+            <p class="lead">Your ultimate guide to exploring and nurturing every plant in your garden.</p>
+            <a href="/Works" class="btn btn-see-work">What We Offer</a> <!--Ky është një link (a) që drejton përdoruesin në faqen /Works.-->
+            <a href="#registerSection" class="btn btn-register">Get Started</a>
+        </div>
+    </div>
+
+
+    <!--Services-->
+    <section class="services-section py-5">
+        <!--Permbajtja per sherbimet-->
+        <div class="container">
+            <!--kufizon gjerësinë e përmbajtjes dhe e qendron atë në qendër të faqes.-->
+            <h2 class="text-center mb-5">Our Services</h2>
+            <div class="row text-center">
+                <!--row e krijon nje rresht qe permban kolona ndersa text-center e vendos tekstin brenda ketij rreshti-->
+                <div class="col-md-4 mb-4">
+                    <div class="service-card shadow-lg p-4">
+                        <div class="icon-container mb-3">
+                            <i class="fas fa-seedling fa-3x" style="color: #43A047;"></i>
+                        </div>
+                        <h4 class="service-title">Plant Education</h4>
+                        <p class="service-description">Learn about different plants and how to care for them.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-card shadow-lg p-4">
+                        <div class="icon-container mb-3">
+                            <i class="fas fa-palette fa-3x" style="color: #FF7043;"></i>
+                        </div>
+                        <h4 class="service-title">Garden Decoration</h4>
+                        <p class="service-description">We provide beautiful garden decoration services to enhance your outdoor space.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-card shadow-lg p-4">
+                        <div class="icon-container mb-3">
+                            <i class="fas fa-search fa-3x" style="color: #29B6F6;"></i>
+                        </div>
+                        <h4 class="service-title">Plant Finder</h4>
+                        <p class="service-description">Find the perfect plants for your garden and learn how to care for them.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-card shadow-lg p-4">
+                        <div class="icon-container mb-3">
+                            <i class="fas fa-utensils fa-3x" style="color: #FFA726;"></i>
+                        </div>
+                        <h4 class="service-title">Plants for Food</h4>
+                        <p class="service-description">Discover edible plants and how to grow them for your own use.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Seasional planting-->
+    <section id="seasonalPlantingCalendar" class="seasonal-planting-section">
+        <div class="container">
+            <h2 class="section-title">Seasonal Planting Calendar</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="season-card spring">
+                        <h3>Spring</h3>
+                        <ul>
+                            <li><strong>Roses:</strong> Best time to plant bare-root roses.</li>
+                            <li><strong>Tulips:</strong> Plant bulbs for a colorful bloom.</li>
+                            <li><strong>Lavender:</strong> Ideal for starting new plants.</li>
+                            <li><strong>Peonies:</strong> Perfect for planting in early spring.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="season-card summer">
+                        <h3>Summer</h3>
+                        <ul>
+                            <li><strong>Sunflowers:</strong> Thrive in the summer heat.</li>
+                            <li><strong>Zinnias:</strong> Perfect for vibrant colors.</li>
+                            <li><strong>Marigolds:</strong> Add bright hues to your garden.</li>
+                            <li><strong>Lavender:</strong> Best time for full bloom and fragrance.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="season-card fall">
+                        <h3>Fall</h3>
+                        <ul>
+                            <li><strong>Chrysanthemums:</strong> Beautiful fall flowers.</li>
+                            <li><strong>Pansies:</strong> Great for cooler weather.</li>
+                            <li><strong>Ornamental Kale:</strong> Adds texture to fall gardens.</li>
+                            <li><strong>Asters:</strong> Perfect for late season blooms.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="season-card winter">
+                        <h3>Winter</h3>
+                        <ul>
+                            <li><strong>Poinsettias:</strong> Classic winter plant.</li>
+                            <li><strong>Camellias:</strong> Blooms in the cold season.</li>
+                            <li><strong>Holly:</strong> Perfect for winter decoration.</li>
+                            <li><strong>Winter Jasmine:</strong> Adds color to winter gardens.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Plant Care Calendar Section -->
+    <section class="plant-care-calendar-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Plant Care Calendar</h2>
+            <div class="calendar">
+                <div class="month">
+                    <ul>
+                        <li class="prev" onclick="prevMonth()">&#10094;</li>
+                        <li class="next" onclick="nextMonth()">&#10095;</li>
+                        <li>
+                            June<br>
+                            <span style="font-size:18px">2024</span>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="weekdays">
+                    <li>Sun</li>
+                    <li>Mon</li>
+                    <li>Tue</li>
+                    <li>Wed</li>
+                    <li>Thu</li>
+                    <li>Fri</li>
+                    <li>Sat</li>
+                </ul>
+                <ul class="days">
+                    <li class="empty"></li>
+                    <li class="empty"></li>
+                    <li class="empty"></li>
+                    <li class="empty"></li>
+                    <li class="empty"></li>
+                    <li onclick="showCareDetails('June 1', 'Ensure all plants receive adequate water')">1<div class="task">Watering</div></li>
+                    <li onclick="showCareDetails('June 2', 'Apply organic fertilizer to enrich soil nutrients')">2<div class="task">Fertilizing</div></li>
+                    <li onclick="showCareDetails('June 3', 'Trim overgrown branches and dead leaves to promote healthy growth')">3<div class="task">Pruning</div></li>
+                    <li onclick="showCareDetails('June 4', 'Remove weeds to prevent competition for nutrients')">4<div class="task">Weeding</div></li>
+                    <li onclick="showCareDetails('June 5', 'Apply mulch to flower beds')">5<div class="task">Mulching</div></li>
+                    <li onclick="showCareDetails('June 6', 'Check for pests and apply control measures')">6<div class="task">Pest Control</div></li>
+                    <li onclick="showCareDetails('June 7', 'Harvest mature fruits and vegetable')">7<div class="task">Harvesting</div></li>
+                    <li onclick="showCareDetails('June 8', 'Plant new seeds for seasonal vegetables and flowers')">8<div class="task">Planting New Seeds</div></li>
+                    <li onclick="showCareDetails('June 9', 'Test soil pH and nutrient levels. Adjust as necessary')">9<div class="task">Soil Testing</div></li>
+                    <li onclick="showCareDetails('June 10', 'Ensure consistent watering, especially for new plants')">10<div class="task">Watering</div></li>
+                    <li onclick="showCareDetails('June 11', 'Feed your plants with a balanced fertilizer')">11<div class="task">Fertilizing</div></li>
+                    <li onclick="showCareDetails('June 12', 'Prune flowering shrubs to encourage more blooms')">12<div class="task">Pruning</div></li>
+                    <li onclick="showCareDetails('June 13', 'Check for new weeds and remove them promptly')">13<div class="task">Weeding</div></li>
+                    <li onclick="showCareDetails('June 14', 'Refresh mulch layer to maintain soil health')">14<div class="task">Mulching</div></li>
+                    <li onclick="showCareDetails('June 15', 'Use eco-friendly pest control solutions')">15<div class="task">Pest Control</div></li>
+                    <li onclick="showCareDetails('June 16', 'Collect ripe produce Prune spent blooms')">16<div class="task">Harvesting</div></li>
+                    <li onclick="showCareDetails('June 17', 'Sow seeds for late summer crops')">17<div class="task">Planting New Seeds</div></li>
+                    <li onclick="showCareDetails('June 18', 'Re-test soil if necessary and amend accordingly')">18<div class="task">Soil Testing</div></li>
+                    <li onclick="showCareDetails('June 19', 'Deep water established plants to encourage root growth')">19<div class="task">Watering</div></li>
+                    <li onclick="showCareDetails('June 20', 'Apply slow-release fertilizer for sustained nutrition')">20<div class="task">Fertilizing</div></li>
+                    <li onclick="showCareDetails('June 21', 'Trim hedges and shape topiary')">21<div class="task">Pruning</div></li>
+                    <li onclick="showCareDetails('June 22', 'Hand-pull weeds to protect plant roots')">22<div class="task">Weeding</div></li>
+                    <li onclick="showCareDetails('June 23', 'Top up mulch to conserve soil moisture')">23<div class="task">Mulching</div></li>
+                    <li onclick="showCareDetails('June 24', 'Top up mulch to conserve soil moisture')">24<div class="task">Pest Control</div></li>
+                    <li onclick="showCareDetails('June 25', 'Pick herbs for drying or immediate use')">25<div class="task">Harvesting</div></li>
+                    <li onclick="showCareDetails('June 26', 'Start seeds indoors for fall planting')">26<div class="task">Planting New Seeds</div></li>
+                    <li onclick="showCareDetails('June 27', 'Check for soil compaction and aerate if necessary')">27<div class="task">Soil Testing</div></li>
+                    <li onclick="showCareDetails('June 28', 'Water early in the morning to reduce evaporation')">28<div class="task">Watering</div></li>
+                    <li onclick="showCareDetails('June 29', 'Feed container plants with liquid fertilizer')">29<div class="task">Fertilizing</div></li>
+                    <li onclick="showCareDetails('June 30', 'Prune dead or diseased wood from trees and shrubs')">30<div class="task">Pruning</div></li>
+                </ul>
+            </div>
+            <div id="careDetails" class="care-details">
+                <h4 id="careDate"></h4>
+                <p id="careDescription"></p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="calendar-body">
+        <!-- Fillimi i qelizave bosh për të filluar me ditën e duhur të javës -->
+        <div class="calendar-day empty"></div>
+        <div class="calendar-day empty"></div>
+        <div class="calendar-day empty"></div>
+        <div class="calendar-day empty"></div>
+        <div class="calendar-day empty"></div>
+        <div class="calendar-day">
+        </div>
+        <div class="calendar-day">
+        </div>
+        <!-- Shto më shumë ditë këtu -->
+    </div>
+    </div>
+    </div>
+    </section>
+
+    <!-- Modal për informacione të detajuara -->
+    <div class="modal fade" id="careTaskModal" tabindex="-1" aria-labelledby="careTaskModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="careTaskModalLabel">Task Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="careTaskModalBody">
+                    <!-- Informacionet e detajuara do të shfaqen këtu -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Garden Visual Section -->
+    <section id="gardenVisual" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Garden</h2>
+            <div class="text-center">
+                <img src="/images/GardenOpening.jpg" alt="Our Beautiful Garden" class="img-fluid shadow-lg rounded">
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Our Work Section -->
+    <section id="ourWorkSection" class="pt-5 work-section">
+        <div class="container">
+            <h2 class="text-center mb-5" style="font-family: 'Montserrat', sans-serif; color: #2c3e50; font-weight: 700;">Our Work</h2>
+            <div id="workCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/images/ourwork.jpg" class="d-block w-100" alt="Our Work">
+                        <div class="carousel-caption d-none d-md-block" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                            <h5 style="font-family: 'Montserrat', sans-serif; font-weight: 600; color: #f39c12;">Elegant Garden Design</h5>
+                            <p style="font-family: 'Montserrat', sans-serif; color: #ecf0f1;">Experience the beauty of our meticulously designed gardens, combining elegance and natural charm.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/decoration.jpg" class="d-block w-100" alt="Gardening">
+                        <div class="carousel-caption d-none d-md-block" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                            <h5 style="font-family: 'Montserrat', sans-serif; font-weight: 600; color: #f39c12;">Serene Backyard Retreat</h5>
+                            <p style="font-family: 'Montserrat', sans-serif; color: #ecf0f1;">Enjoy the tranquility of a serene backyard retreat, designed to offer peace and relaxation.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/fruitsourwork.jpg" class="d-block w-100" alt="Build">
+                        <div class="carousel-caption d-none d-md-block" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                            <h5 style="font-family: 'Montserrat', sans-serif; font-weight: 600; color: #f39c12;">Vibrant Community Garden</h5>
+                            <p style="font-family: 'Montserrat', sans-serif; color: #ecf0f1;">Discover the vibrant community garden, where we cultivate a variety of plants and foster a sense of togetherness.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#workCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#workCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!--Plant Health-->
+    <section id="plant-health-tool" class="plant-health-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">Plant Health Diagnostic Tool</h2>
+            <form id="diagnostic-form" class="diagnostic-form">
+                <div class="form-group mb-4">
+                    <label for="symptom" class="form-label">Select the symptom you observe:</label>
+                    <select id="symptom" name="symptom" class="form-control" onchange="showNextQuestion('stage1')">
+                        <option value="">-- Select Symptom --</option>
+                        <option value="yellow-leaves">Yellow Leaves</option>
+                        <option value="wilting">Wilting</option>
+                        <option value="spots">Spots on Leaves</option>
+                        <option value="insects">Insects on Plant</option>
+                        <option value="stunted-growth">Stunted Growth</option>
+                        <option value="discoloration">Discoloration</option>
+                    </select>
+                </div>
+                <div id="stage1" class="form-group mb-4" style="display:none;">
+                    <label for="condition" class="form-label">Select the condition you observe:</label>
+                    <select id="condition" name="condition" class="form-control" onchange="showNextQuestion('stage2')">
+                        <option value="">-- Select Condition --</option>
+                        <option value="dry">Dry Soil</option>
+                        <option value="wet">Wet Soil</option>
+                        <option value="normal">Normal Soil</option>
+                        <option value="sticky">Sticky Leaves</option>
+                    </select>
+                </div>
+                <div id="stage2" class="form-group mb-4" style="display:none;">
+                    <label for="environment" class="form-label">Select the environment condition:</label>
+                    <select id="environment" name="environment" class="form-control" onchange="diagnosePlant()">
+                        <option value="">-- Select Environment --</option>
+                        <option value="sunny">Sunny</option>
+                        <option value="shady">Shady</option>
+                        <option value="humid">Humid</option>
+                        <option value="dry-air">Dry Air</option>
+                        <option value="windy">Windy</option>
+                    </select>
+                </div>
+                <button type="button" class="btn btn-primary" onclick="resetForm()">Start Over</button>
+            </form>
+            <div id="diagnostic-result" class="diagnostic-result mt-5"></div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!--What our Client Say-->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Clients Say</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial text-center">
+                        <img src="/images/Rrrezartt.jpg" alt="Client 1" class="img-fluid rounded-circle mb-3">
+                        <p>"greenGENIUS transformed our backyard into a beautiful oasis. Highly recommend their services!"</p>
+                        <h5>Rrezart Prebreza</h5>
+                        <div class="client-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/rrezart-prebreza/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/rrezart.prebreza" target="_blank"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial text-center">
+                        <img src="/images/Kimete.jpg" alt="Client 2" class="img-fluid rounded-circle mb-3">
+                        <p>"Professional, reliable, and great attention to detail. Our lawn has never looked better!"</p>
+                        <h5>Kimete Bilalli</h5>
+                        <div class="client-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/kimete-bilalli/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/kimete.bilalli" target="_blank"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial text-center">
+                        <img src="/images/Bbesart.jpg" alt="Client 3" class="img-fluid rounded-circle mb-3">
+                        <p>"Excellent service and friendly staff. greenGENIUS is our go-to for all lawn care needs."</p>
+                        <h5>Besart Prebreza</h5>
+                        <div class="client-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/besart-prebreza/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/besart.prebreza" target="_blank"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Articles Section -->
+    <section id="feature-articles" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Feature Articles</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" data-toggle="modal" data-target="#article1Modal">
+                        <img src="/images/Winter.jpg" class="card-img-top" alt="Article 1">
+                        <div class="card-body">
+                            <h5 class="card-title">How to Care for Your Plants in Winter</h5>
+                            <p class="card-text">Discover essential tips for winter garden maintenance.  </p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" data-toggle="modal" data-target="#article2Modal">
+                        <img src="/images/Balcon.jpg" class="card-img-top" alt="Article 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Top 10 Balcony Plants</h5>
+                            <p class="card-text">Learn about the best plants to grow on your balcony. </p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" data-toggle="modal" data-target="#article3Modal">
+                        <img src="/images/Organic.jpg" class="card-img-top" alt="Article 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Organic Gardening Tips</h5>
+                            <p class="card-text">A comprehensive guide to organic gardening practices. </p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Article 1 -->
+    <div class="modal fade" id="article1Modal" tabindex="-1" role="dialog" aria-labelledby="article1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="article1ModalLabel">How to Care for Your Plants in Winter</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Learn the best practices for keeping your plants healthy and thriving during the cold winter months. Here are some tips to follow:</p>
+                    <ul>
+                        <li>Keep plants indoors or in a greenhouse.</li>
+                        <li>Ensure they receive adequate sunlight.</li>
+                        <li>Water them sparingly to avoid root rot.</li>
+                        <li>Use mulch to keep the soil warm.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal for Article 2 -->
+    <div class="modal fade" id="article2Modal" tabindex="-1" role="dialog" aria-labelledby="article2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="article2ModalLabel">Top 10 Balcony Plants</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Discover the top 10 plants that are perfect for adding a touch of green to your balcony:</p>
+                    <ul>
+                        <li>Spider Plant</li>
+                        <li>Succulents</li>
+                        <li>Herbs (Basil, Mint, Parsley)</li>
+                        <li>Petunias</li>
+                        <li>Ferns</li>
+                        <li>Begonias</li>
+                        <li>Ivy</li>
+                        <li>Marigolds</li>
+                        <li>Lavender</li>
+                        <li>Geraniums</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Article 3 -->
+    <div class="modal fade" id="article3Modal" tabindex="-1" role="dialog" aria-labelledby="article3ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="article3ModalLabel">Organic Gardening Tips</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Explore our top tips for starting and maintaining an organic garden at home:</p>
+                    <ul>
+                        <li>Use compost and organic fertilizers.</li>
+                        <li>Plant native species.</li>
+                        <li>Practice crop rotation.</li>
+                        <li>Use natural pest control methods.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Subscription box-->
+    <section class="subscription-box-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Plant Care Subscription Box</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="/images/greenbox.jpg" alt="Subscription Box" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <h3>Subscribe to our Monthly Plant Care Box</h3>
+                    <p>Get new plants, gardening tools, and care tips delivered to your doorstep every month.</p>
+                    <ul>
+                        <li>Exclusive access to rare plants</li>
+                        <li>High-quality gardening tools</li>
+                        <li>Personalized care tips</li>
+                        <li>Special discounts and offers</li>
+                    </ul>
+                    <form id="subscription-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Delivery Address</label>
+                            <input type="text" id="address" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subscription-plan">Choose Your Plan</label>
+                            <select id="subscription-plan" class="form-control" required>
+                                <option value="monthly">Monthly - $29.99</option>
+                                <option value="quarterly">Quarterly - $79.99</option>
+                                <option value="yearly">Yearly - $299.99</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Subscribe Now</button>
+                    </form>
+                    <div id="subscription-success" class="alert alert-success mt-3" style="display: none;">
+                        Thank you for subscribing! Your first box will arrive soon.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sponsors Section -->
+    <section id="sponsors" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Partnered With</h2>
+            <div class="row justify-content-center">
+                <div class="col-6 col-md-3 mb-3">
+                    <img src="/images/PristinaMall.jpg" alt="Sponsor 1" class="img-fluid">
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <img src="/images/AlbiMall.logo.jpg" alt="Sponsor 2" class="img-fluid">
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <img src="/images/Interex.jpg" alt="Sponsor 4" class="img-fluid">
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <img src="/images/vivafresh.jpg" alt="Sponsor 4" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="row pb-3">
+        @foreach (var product in Model)
+        {
+            <div class="col-lg-3 col-sm-6">
+                <div class="row p-2">
+                    <div class="col-12 p-1">
+                        <div class="card border-0 p-3 shadow border-top border-5 rounded">
+                            <img src="@product.ImgUrl" class="card-img-top rounded" />
+                            <div class="card-body pb-0">
+                                <div class="pl-1">
+                                    <p class="card-title h5 text-dark opacity-75 text-uppercase text-center">@product.Title</p>
+                                    <p class="card-title text-warning text-center">by <b>@product.Author</b></p>
+                                </div>
+                                <div class="pl-1">
+                                    <p class="text-dark text-opacity-75 text-center mb-0">
+                                        List Price:<span class="text-decoration-line-through">@product.ListPrice.ToString("c")</span>
+                                    </p>
+                                </div>
+                                <div class="pl-1">
+                                    <p class="text-dark text-opacity-75 text-center">
+                                        As low as: <span>@product.Price100.ToString("c")</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <a asp-action="Details"
+                                   asp-route-productId="@product.Id"
+                                   class="btn btn-primary bg-gradient border-0 form-control">
+                                    Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+
+    <!-- User Reviews Section -->
+    <section class="review-section">
+        <h2>Rate Your Experience</h2>
+        <p>We'd love to hear your feedback!</p>
+        <div class="emoji-rating">
+            <button class="emoji-btn" data-emoji="😃" onclick="rateExperience('😃')">😃</button>
+            <button class="emoji-btn" data-emoji="😊" onclick="rateExperience('😊')">😊</button>
+            <button class="emoji-btn" data-emoji="😐" onclick="rateExperience('😐')">😐</button>
+            <button class="emoji-btn" data-emoji="😞" onclick="rateExperience('😞')">😞</button>
+            <button class="emoji-btn" data-emoji="😡" onclick="rateExperience('😡')">😡</button>
+        </div>
+        <div id="emoji-feedback" class="emoji-feedback mt-3"></div>
+    </section>
+
+
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-phone-alt"></i> Phone: +383 45 632 162</li>
+                        <li><i class="fas fa-envelope"></i> Email: contact@greengenius.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Address: 10000 Kosovo, Pristina City</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin-in"></a>
+                    </div>
+                    <a href="#subscribe" class="btn-animated mt-3"><span>Subscribe Now</span></a>
+                </div>
+                <div class="col-md-3">
+                    <h5>About greenGENIUS</h5>
+                    <p>greenGENIUS offers professional lawn care and landscaping services to keep your outdoor space looking its best. Follow us for the latest updates and special offers.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/About"><i class="fas fa-info-circle"></i> About Us</a></li>
+                        <li><a href="/Services"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                        <li><a href="/Contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                        <li><a href="/Privacy"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+
+    <script>
+        // Date and Time Script
+        function updateDateTime() {
+            var now = new Date();
+            var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' };
+            var formattedDate = now.toLocaleDateString('en-US', options);
+            document.getElementById('date-time').textContent = formattedDate;
+        }
+
+        updateDateTime();
+        setInterval(updateDateTime, 1000);
+
+
+        function addPlant(plantName) {
+            const grid = document.querySelector('.planner-grid');
+            const plant = document.createElement('div');
+            plant.className = 'plant';
+            plant.innerText = plantName;
+            grid.appendChild(plant);
+        }
+
+
+        function addPlant(plantName) {
+            const grid = document.querySelector('.planner-grid');
+            const plant = document.createElement('div');
+            plant.className = 'plant';
+            plant.innerText = plantName;
+            grid.appendChild(plant);
+        }
+
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            loadCareCalendar();
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            loadCareCalendar();
+        });
+
+        function loadCareCalendar() {
+            const careTasks = [
+                {
+                    date: '2024-06-01',
+                    task: 'Watering - Roses',
+                    details: 'Water the roses thoroughly in the morning to keep the soil moist but not waterlogged. Use a watering can or hose with a gentle spray nozzle.',
+                    steps: [
+                        'Check the soil moisture before watering.',
+                        'Water at the base of the plant.',
+                        'Avoid wetting the foliage to prevent disease.'
+                    ]
+                },
+                {
+                    date: '2024-06-02',
+                    task: 'Fertilizing - Tulips',
+                    details: 'Apply a balanced fertilizer to the tulips to promote healthy growth. Use a granular or liquid fertilizer and follow the manufacturer\'s instructions.',
+                    steps: [
+                        'Choose a balanced fertilizer.',
+                        'Apply around the base of the tulip plants.',
+                        'Water the plants after fertilizing.'
+                    ]
+                },
+                {
+                    date: '2024-06-03',
+                    task: 'Pruning - Sunflowers',
+                    details: 'Prune the sunflowers to encourage new growth and remove any dead or diseased parts. Use sharp, clean pruning shears.',
+                    steps: [
+                        'Inspect the plant for dead or diseased parts.',
+                        'Cut back to healthy tissue.',
+                        'Dispose of pruned material properly.'
+                    ]
+                },
+                {
+                    date: '2024-06-04',
+                    task: 'Weeding - All Plants',
+                    details: 'Remove weeds from all garden beds to reduce competition for nutrients and water. Use a hoe or hand weeder.',
+                    steps: [
+                        'Identify weeds and their roots.',
+                        'Use appropriate tools to remove weeds.',
+                        'Dispose of weeds away from the garden.'
+                    ]
+                },
+                {
+                    date: '2024-06-05',
+                    task: 'Watering - Daffodils',
+                    details: 'Water the daffodils in the early morning to keep the soil moist. Avoid overwatering to prevent bulb rot.',
+                    steps: [
+                        'Check soil moisture before watering.',
+                        'Water at the base of the plants.',
+                        'Ensure good drainage to prevent bulb rot.'
+                    ]
+                },
+                {
+                    date: '2024-06-06',
+                    task: 'Fertilizing - Roses',
+                    details: 'Apply a slow-release fertilizer to the roses to provide nutrients throughout the growing season.',
+                    steps: [
+                        'Select a slow-release fertilizer.',
+                        'Apply around the base of the rose bushes.',
+                        'Water the plants after fertilizing.'
+                    ]
+                },
+                {
+                    date: '2024-06-07',
+                    task: 'Pruning - Tulips',
+                    details: 'Prune the tulips to remove dead or diseased foliage and encourage new growth.',
+                    steps: [
+                        'Inspect the plant for dead or diseased foliage.',
+                        'Use sharp, clean pruning shears.',
+                        'Dispose of pruned material properly.'
+                    ]
+                },
+                {
+                    date: '2024-06-08',
+                    task: 'Weeding - All Plants',
+                    details: 'Weed all garden beds and pathways to maintain a tidy appearance and reduce competition for nutrients.',
+                    steps: [
+                        'Identify and remove weeds.',
+                        'Use a hoe or hand weeder.',
+                        'Dispose of weeds away from the garden.'
+                    ]
+                }
+            ];
+
+            const calendarContainer = document.getElementById('calendar-container');
+            calendarContainer.innerHTML = '';
+
+            careTasks.forEach(task => {
+                const taskElement = document.createElement('div');
+                taskElement.className = 'care-task';
+                taskElement.innerHTML = `
+                                    <div class="task-date">${task.date}</div>
+                                    <div class="task-detail">${task.task}</div>
+                                    <button class="btn btn-primary mt-2" onclick="showTaskDetails('${task.details}', ${JSON.stringify(task.steps)})">View Details</button>
+                                `;
+                calendarContainer.appendChild(taskElement);
+            });
+        }
+        function showCareDetails(date, description) {
+            document.getElementById('careDate').innerText = date;
+            document.getElementById('careDescription').innerText = description;
+            document.getElementById('careDetails').style.display = 'block';
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Optional: Initialize the calendar with today's care details
+            // showCareDetails('June 1', 'Water all plants thoroughly');
+        });
+
+
+        function showTaskDetails(details, steps) {
+            const stepsList = steps.map(step => `<li>${step}</li>`).join('');
+            const modalBody = document.getElementById('careTaskModalBody');
+            modalBody.innerHTML = `
+                                <p>${details}</p>
+                                <h6>Steps:</h6>
+                                <ul>${stepsList}</ul>
+                            `;
+            var myModal = new bootstrap.Modal(document.getElementById('careTaskModal'), {});
+            myModal.show();
+        }
+
+        function showNextQuestion(stage) {
+            document.getElementById(stage).style.display = 'block';
+        }
+
+        function resetForm() {
+            document.getElementById('diagnostic-form').reset();
+            document.getElementById('stage1').style.display = 'none';
+            document.getElementById('stage2').style.display = 'none';
+            document.getElementById('diagnostic-result').innerHTML = '';
+        }
+
+        function diagnosePlant() {
+            const symptom = document.getElementById('symptom').value;
+            const condition = document.getElementById('condition').value;
+            const environment = document.getElementById('environment').value;
+            const diagnosisResult = document.getElementById('diagnostic-result');
+
+            let diagnosis = '';
+            let treatment = '';
+
+            if (symptom === 'yellow-leaves' && condition === 'dry' && environment === 'sunny') {
+                diagnosis = 'Nitrogen Deficiency';
+                treatment = 'Add a balanced fertilizer that includes nitrogen.';
+            } else if (symptom === 'wilting' && condition === 'wet' && environment === 'shady') {
+                diagnosis = 'Overwatering or Root Rot';
+                treatment = 'Reduce watering and improve soil drainage.';
+            } else if (symptom === 'spots' && condition === 'normal' && environment === 'humid') {
+                diagnosis = 'Fungal Infection';
+                treatment = 'Use a fungicide and remove affected leaves. Ensure proper air circulation and avoid overhead watering.';
+            } else if (symptom === 'insects' && condition === 'sticky' && environment === 'dry-air') {
+                diagnosis = 'Aphid Infestation';
+                treatment = 'Use an insecticidal soap or neem oil to treat the plant. Encourage beneficial insects like ladybugs.';
+            } else if (symptom === 'stunted-growth' && condition === 'normal' && environment === 'sunny') {
+                diagnosis = 'Phosphorus Deficiency';
+                treatment = 'Apply a phosphorus-rich fertilizer. Bone meal is a good organic source of phosphorus.';
+            } else if (symptom === 'discoloration' && condition === 'normal' && environment === 'windy') {
+                diagnosis = 'Iron Deficiency';
+                treatment = 'Add iron supplements to the soil. Ensure the soil pH is not too high as it can inhibit iron absorption.';
+            } else if (symptom === 'yellow-leaves' && condition === 'wet' && environment === 'humid') {
+                diagnosis = 'Overwatering or Poor Drainage';
+                treatment = 'Allow the soil to dry out before watering again. Ensure proper drainage and consider repotting if necessary.';
+            } else {
+                diagnosis = 'Unknown Issue';
+                treatment = 'Please provide more specific symptoms or consult a gardening expert.';
+            }
+
+            diagnosisResult.innerHTML = `
+                                <h5>Diagnosis: ${diagnosis}</h5>
+                                <p>Treatment: ${treatment}</p>
+                            `;
+        }
+
+        // Gallery Shuffle Script
+        const galleryImages = [
+            '/images/rosered.jpg',
+            '/images/SunnFlower.jpg',
+            '/images/Chrysanthemum.jpg',
+            '/images/Poinsettia.jpg',
+            '/images/Tulip.Pink.jpg',
+            '/images/daffodil.jpg',
+            '/images/Marigold.jpg'
+        ];
+
+        function shuffleGallery() {
+            const shuffledImages = galleryImages.sort(() => 0.5 - Math.random()).slice(0, 3);
+            const galleryRow = document.getElementById('gallery-row');
+            galleryRow.innerHTML = '';
+            shuffledImages.forEach(src => {
+                const col = document.createElement('div');
+                col.className = 'col-md-4';
+                col.innerHTML = `
+                                            <div class="gallery-item">
+                                                <img src="${src}" class="img-fluid" alt="Gallery Image">
+                                            </div>
+                                        `;
+                galleryRow.appendChild(col);
+            });
+        }
+
+
+        function rateExperience(emoji) {
+            document.getElementById('emoji-feedback').textContent = `Thank you for your feedback! You selected: ${emoji}`;
+        }
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            createSparkles();
+        });
+
+        function createSparkles() {
+            const jumbotron = document.querySelector('.jumbotron');
+            for (let i = 0; i < 20; i++) {
+                const sparkle = document.createElement('div');
+                sparkle.className = 'sparkle';
+                sparkle.style.top = `${Math.random() * 100}%`;
+                sparkle.style.left = `${Math.random() * 100}%`;
+                sparkle.style.animationDelay = `${Math.random() * 2}s`;
+                sparkle.style.animationDuration = `${Math.random() * 2 + 2}s`;
+                jumbotron.appendChild(sparkle);
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+

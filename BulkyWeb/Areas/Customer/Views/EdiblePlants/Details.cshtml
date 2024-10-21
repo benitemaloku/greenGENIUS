@@ -1,0 +1,120 @@
+﻿@model Bulky.Models.ediblePlants
+
+@{
+    ViewData["Title"] = "Plant Details";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@Model.Name Details</title>
+    <style>
+
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100vw;
+            padding-left: 9vw;
+            margin: 0;
+        }
+
+        .section {
+            width: 100vw;
+            height: 30vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+            .section img {
+                border-radius: 20px;
+                width: 20vw;
+                height: 20vw;
+                object-fit: cover;
+                margin-bottom: 20px;
+            }
+
+
+
+            .section p {
+                color: #662d91;
+                font-size: 1.2em;
+            }
+
+        .first-section {
+            background-color: #DDA0DD
+        }
+
+        .second-section {
+            background-color: #ccccff;
+        }
+
+        .third-section {
+            background-color: #bf94e4;
+        }
+
+        .mini-section {
+            margin-inline: 10vw;
+            width: 30vw;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="section first-section">
+
+            <div style="margin-inline:3vw">
+                <img src="data:image/jpeg;base64,@Convert.ToBase64String(Model.Photo)" alt="@Model.Name" />
+                <h2 style="color:#662d91;">@Model.Name</h2>
+            </div>
+
+            <div>
+                <h5><strong>INTRODUCTION:</strong></h5>
+                <p style="align-self:start; width:50vw;"> @Model.Introduction</p>
+            </div>
+
+        </div>
+
+
+        <div class="section second-section">
+
+
+            <div class="mini-section 1-mini-2">
+                <h2><strong>Season</strong></h2>
+                <h3>@Model.Season</h3>
+            </div>
+
+            <div class="mini-section 2-mini-2">
+                <h2><strong>Environment</strong></h2>
+                <h3>@Model.Environment</h3>
+            </div>
+
+            <div class="mini-section 3-mini-2">
+                <h2><strong>Type</strong></h2>
+                <h3>@Model.Type</h3>
+            </div>
+
+
+
+        </div>
+
+        <div class="section third-section">
+            <div class="mini-section 1-mini-3">
+                <h2><strong>Care Instructions</strong></h2>
+                <p style="align-self:start; width:30vw;"> @Model.Care</p>
+            </div>
+
+            <div class="mini-section 2-mini-3">
+                <h2><strong>Benefits</strong></h2>
+                <p>@Model.Benefits</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,429 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BulkyWeb.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BulkyWeb.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\AlbiMall.logo.jpg",
+      "PackagePath": "staticwebassets\\images\\AlbiMall.logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\Balcon.jpg",
+      "PackagePath": "staticwebassets\\images\\Balcon.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\Bbesart.jpg",
+      "PackagePath": "staticwebassets\\images\\Bbesart.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\Benita.jpg",
+      "PackagePath": "staticwebassets\\images\\Benita.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\GardenOpening.jpg",
+      "PackagePath": "staticwebassets\\images\\GardenOpening.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\Interex.jpg",
+      "PackagePath": "staticwebassets\\images\\Interex.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\Kimete.jpg",
+      "PackagePath": "staticwebassets\\images\\Kimete.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\Organic.jpg",
+      "PackagePath": "staticwebassets\\images\\Organic.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\PristinaMall.jpg",
+      "PackagePath": "staticwebassets\\images\\PristinaMall.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\Rrrezartt.jpg",
+      "PackagePath": "staticwebassets\\images\\Rrrezartt.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\Winter.jpg",
+      "PackagePath": "staticwebassets\\images\\Winter.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\aalba.jpg",
+      "PackagePath": "staticwebassets\\images\\aalba.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\aarmend.jpg",
+      "PackagePath": "staticwebassets\\images\\aarmend.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\aboutus.jpg",
+      "PackagePath": "staticwebassets\\images\\aboutus.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\bena19.jpg",
+      "PackagePath": "staticwebassets\\images\\bena19.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\community.jpg",
+      "PackagePath": "staticwebassets\\images\\community.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\decoration.jpg",
+      "PackagePath": "staticwebassets\\images\\decoration.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\dielli.jpg",
+      "PackagePath": "staticwebassets\\images\\dielli.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\ekipa.jpg",
+      "PackagePath": "staticwebassets\\images\\ekipa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\fruitsourwork.jpg",
+      "PackagePath": "staticwebassets\\images\\fruitsourwork.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\greenbox.jpg",
+      "PackagePath": "staticwebassets\\images\\greenbox.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\inno.jpg",
+      "PackagePath": "staticwebassets\\images\\inno.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\mjedisi.jpg",
+      "PackagePath": "staticwebassets\\images\\mjedisi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\ourwork.jpg",
+      "PackagePath": "staticwebassets\\images\\ourwork.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\product\\133fd009-2cca-4450-88cd-67985e6bd17a.png",
+      "PackagePath": "staticwebassets\\images\\product\\133fd009-2cca-4450-88cd-67985e6bd17a.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\product\\3af401f1-5ce5-4e31-9544-352a7d80152a.png",
+      "PackagePath": "staticwebassets\\images\\product\\3af401f1-5ce5-4e31-9544-352a7d80152a.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\product\\3d08c4d3-6b56-40b8-99da-8d1e2bff24a7.png",
+      "PackagePath": "staticwebassets\\images\\product\\3d08c4d3-6b56-40b8-99da-8d1e2bff24a7.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\product\\3eeb6381-ad17-42c9-a1e2-0c1c60e048a7.png",
+      "PackagePath": "staticwebassets\\images\\product\\3eeb6381-ad17-42c9-a1e2-0c1c60e048a7.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\product\\5d3e28a5-7add-489a-af47-97a94223bec1.png",
+      "PackagePath": "staticwebassets\\images\\product\\5d3e28a5-7add-489a-af47-97a94223bec1.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\product\\73707158-5d33-4317-a192-48772a6f2acf.png",
+      "PackagePath": "staticwebassets\\images\\product\\73707158-5d33-4317-a192-48772a6f2acf.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\product\\903452bd-7daa-4e11-8eb4-6eb07c1eba0d.png",
+      "PackagePath": "staticwebassets\\images\\product\\903452bd-7daa-4e11-8eb4-6eb07c1eba0d.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\product\\9b4b4844-0bdc-4a6f-a9dc-ce2a22709a8d.png",
+      "PackagePath": "staticwebassets\\images\\product\\9b4b4844-0bdc-4a6f-a9dc-ce2a22709a8d.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\product\\9dfec893-2181-4b68-9ad9-77da780e9e7f.png",
+      "PackagePath": "staticwebassets\\images\\product\\9dfec893-2181-4b68-9ad9-77da780e9e7f.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\product\\a1d159fe-48e9-4061-95fa-e426656c7d5b.png",
+      "PackagePath": "staticwebassets\\images\\product\\a1d159fe-48e9-4061-95fa-e426656c7d5b.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\product\\d68385be-e060-4248-9896-c276cfa342a3.png",
+      "PackagePath": "staticwebassets\\images\\product\\d68385be-e060-4248-9896-c276cfa342a3.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\product\\de271af5-47b5-4535-ada3-230a0db7b77e.png",
+      "PackagePath": "staticwebassets\\images\\product\\de271af5-47b5-4535-ada3-230a0db7b77e.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\product\\f2b15c9d-cc76-4b31-bfac-ab7b757ca4ca.png",
+      "PackagePath": "staticwebassets\\images\\product\\f2b15c9d-cc76-4b31-bfac-ab7b757ca4ca.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\spider.jpg",
+      "PackagePath": "staticwebassets\\images\\spider.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\uuran.jpg",
+      "PackagePath": "staticwebassets\\images\\uuran.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\images\\vivafresh.jpg",
+      "PackagePath": "staticwebassets\\images\\vivafresh.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\js\\product.js",
+      "PackagePath": "staticwebassets\\js\\product.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\B M\\greenGENIUS\\BulkyWeb\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BulkyWeb.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BulkyWeb.props",
+      "PackagePath": "build\\BulkyWeb.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BulkyWeb.props",
+      "PackagePath": "buildMultiTargeting\\BulkyWeb.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BulkyWeb.props",
+      "PackagePath": "buildTransitive\\BulkyWeb.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
